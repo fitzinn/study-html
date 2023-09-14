@@ -1,0 +1,91 @@
+<style>
+  .subs-button {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    /*height: 36px;
+    width: 105px; 
+    css box model is the border and padding
+    not very effective*/
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 7px;
+    /*transition if for smoothness, transition: the thing u want to be smooth and the seconds, divide by ","*/
+    transition: opacity 0.15s;
+    vertical-align: top;
+  }
+/*.class:hover is for when u hover the mouse over*/
+.subs-button:hover {
+  /*opacity makes the button lighter(because the opacity is lower, goes from 0 to 1)*/
+  opacity: 0.7;
+}
+/*.class:active is for when you CLICK*/
+.subs-button:active{
+  opacity: 0.5;
+}
+
+  .join-button{
+    background-color: white;
+    border-color: rgb(41, 118, 211);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(41, 118, 211);
+    padding: 9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, opacity 0.15s;
+    vertical-align: top;
+  }
+
+  .join-button:hover{
+    background-color: rgb(41, 118, 211);
+    color: white;
+  }
+
+  .join-button:active{
+    opacity: 0.7;
+  }
+
+  .tweet-button{
+    background-color:rgb(2, 158, 255);
+    border-color: rgb(2, 158, 255);
+    border-style: solid;
+    color: white;
+    border-radius: 18px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 7px;
+    transition: box-shadow 0.15s;
+    vertical-align: top;
+  }
+
+  .tweet-button:hover {
+    /*horizontal, vertical, blur, color - color rgba 0 to 1*/
+    box-shadow: 3px 3px 5px rgba(2, 158, 255, 0.15);
+  }
+
+</style>
+
+<button class="subs-button">
+  SUBSCRIBE
+</button>
+
+<button class="join-button">
+  JOIN
+</button>
+
+<button class="tweet-button">
+  Tweet
+</button>
+
+
